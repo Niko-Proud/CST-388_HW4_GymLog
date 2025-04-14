@@ -78,7 +78,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:hint="@string/enter_a_weight"
+        android:hint="@string/enter_the_number_of_reps"
         android:inputType="number|numberDecimal"
         android:padding="8dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/repLabelTextView"
