@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void updateDisplay(){
+    private void updateDisplay() {
         String currentInfo = binding.logDisplayTextView.getText().toString();
-        String newDisplay = String.format(Locale.US,"Exercise:%s%nWeight:%.2f%nReps:%d%n=-=-=-=-=-=-=%n%s", exercise, weight, reps,currentInfo);
+        String newDisplay = String.format(Locale.US, "Exercise:%s%nWeight:%.2f%nReps:%d%n=-=-=-=-=-=-=%n%s", exercise, weight, reps, currentInfo);
         binding.logDisplayTextView.setText(newDisplay);
     }
 
-    private void getInformationFromDisplay(){
+    private void getInformationFromDisplay() {
 
         exercise = binding.exerciseInputEditText.getText().toString();
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             weight = Double.parseDouble(binding.repInputEditeText.getText().toString());
 
-        }catch(NumberFormatException e){
+        } catch (NumberFormatException e) {
 
             Log.d(TAG, "Error reading value from Weight edit text.");
 
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
             reps = Integer.parseInt(binding.repInputEditeText.getText().toString());
 
-        }catch(NumberFormatException e){
+        } catch (NumberFormatException e) {
 
             Log.d(TAG, "Error reading value from Reps edit text.");
 
