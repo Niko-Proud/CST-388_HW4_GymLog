@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
-    private static final String TAG = "DAC_GYMLOG";
+    public static final String TAG = "DAC_GYMLOG";
     String exercise = "";
     double weight = 0.0;
     int reps = 0;
