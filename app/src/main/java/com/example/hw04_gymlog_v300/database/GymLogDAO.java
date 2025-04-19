@@ -15,7 +15,8 @@ public interface GymLogDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(GymLog gymlog);
 
-    @Query("Select * from " + GymLogDatabase.GYM_LOG_TABLE)
+//    Spaces are important, forgot the space in front of order, broke some things!
+    @Query("SELECT * FROM " + GymLogDatabase.GYM_LOG_TABLE + " ORDER BY date DESC")
     List<GymLog> getAllRecords();
 
 }
