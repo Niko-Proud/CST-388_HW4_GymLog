@@ -10,8 +10,8 @@
     <TextView
         android:id="@+id/titleLoginTextView"
         android:layout_width="match_parent"
-        android:layout_height="150dip"
-        android:layout_margin="16dip"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:text="@string/welcome_to_the_gymlog_n_please_sign_in"
         android:textSize="40sp"
@@ -22,8 +22,8 @@
     <EditText
         android:id="@+id/userNameLoginEditText"
         android:layout_width="match_parent"
-        android:layout_height="75dip"
-        android:layout_margin="16dip"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:hint="@string/username"
         android:inputType="text"
@@ -35,8 +35,8 @@
     <EditText
         android:id="@+id/passwordLoginEditText"
         android:layout_width="match_parent"
-        android:layout_height="75dip"
-        android:layout_margin="16dip"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:hint="@string/password"
         android:inputType="textPassword"
